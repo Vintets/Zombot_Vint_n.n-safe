@@ -1,0 +1,40 @@
+﻿main		        Домашний остров		
+isle_03		        Остров Любви		
+isle_02		        Остров Майя		
+isle_x		        Остров Х		
+isle_faith		Остров Веры		
+isle_hope		Остров Надежды		
+isle_scary		Страшный		
+isle_alpha		Альфа		
+isle_omega		Омега		
+isle_01		        Секретный		
+isle_sand		Песочный		
+isle_polar		Остров Полярной ночи		
+isle_small		Остров Маленькой ёлочки		
+isle_wild		Дремучий		
+isle_star		Звёздный		
+isle_large		Остров Большой ёлки		
+isle_mobile		Мобильный остров		
+isle_moon		Лунный		
+isle_giant		Остров Гигантов		
+isle_xxl		Остров Огромной ёлки		
+isle_desert		Необитаемый остров		
+isle_ufo		Остров НЛО		
+isle_dream		Остров Мечты		
+isle_scarecrow		Пик Админа		
+isle_elephant		Ужасный остров		
+isle_emerald		Город-призрак		
+isle_light		Вишневый остров		
+isle_gnome		Остров гномов		
+isle_monster		Остров Чудовища		
+un_01		        Подножье		
+un_02		        Пещеры Зу		
+un_03		        Мексиканский каньон		
+un_04		        Копи царя Зомби		
+un_05		        Нижнее днище		
+un_06		        Бездна		
+un_07		        Хрустальный		
+un_08		        Мраморная пещера	
+un_09		        Склад хакера	
+
+isle_paper		Сказочный лес

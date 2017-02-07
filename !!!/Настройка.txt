@@ -1,0 +1,61 @@
+В settings.ini можно настроить почти всё
+
+ignore_errors = true
+Игнорировать ошибки true/false
+
+log_all = false
+полный лог true/false
+
+default_user = 0
+пользователь запускаемый по умолчанию (убран выбор при запуске)
+default_user можно передавать с параметром командной строки, например из Bat файла
+Python main.py 4 -c
+(добавлено Vint)
+
+
+send_user = 26586292
+send_user = 3689309721107098259
+если поставить эту строку то все коллекции будут пересылаться на указанный ID вконтакте
+
+setting_view = {'pickup':True,'location_send':False}
+Если 'pickup':True то будут показываться подобранные предметы, 'pickup':False не будут
+'location_send':False не будет показываться локация на которую перешли, 'location_send':True будет
+seed_item = P_15
+семена для посадки можно записать по ддругому {'main':'P_15','other':'P_12'} на домашнем будет сеяться одно растение, на остальных другое
+cook_item = RECIPE_12
+Рецепт для варки можно тоже по другому записать
+[RECIPE_12,RECIPE_11,RECIPE_10] если ингридиентов на рецепт 12 не хватает будет вариться 11 если же и на его не хватает то 10
+sell_item = {u'S_51':150,u'S_52':150,u'CR_44':150}
+Какой предмет продавать и сколько при этом оставлять
+К примеру CR_44 - мир продавать но оставлять всегда 150 штук
+locations_only = []
+Если сдесь указать локации то бот будет переходить только по ним
+locations_nfree = [u"isle_01", u"isle_small", u"isle_star", u"isle_large", u"isle_moon", u"isle_giant", u"isle_xxl", u"isle_desert"]
+locations_nwalk = [u"un_0"+str(x+1) for x in range(9)]
+locations_nother = []
+Это стандартные запреты островов, по умолчанию на платные острова не ходит а так же в пещеры
+
+
+
+В game_engine.py находим строки
+WoodPicker, # Сбор дерева
+StonePicker, # Сбор камня
+BrewPicker, # Сбор сваренного
+BagsPicker, # Сбор сумок
+WoodTargetSelecter, # Отправка работать дровосекам
+StoneTargetSelecter,# Отправка работать камнетёсов
+CookerBot, # Работа с поварами (подъем из могил, установка рецептов)
+CookSpeed, # Посолить рецепты
+FertilBot, # Удобрение деревьев
+HarvesterBot, # Сбор чего либо + вскапывание грядок
+CakesReceiverBot, # Сбор пряников
+SeederBot, # Посейка
+GiftReceiverBot, # Принятие подарков
+BoxPickuper, # Вскрытие чего либо
+RouletteRoller, # Кручение рулеток
+FrutRouletteRoller, # Кручение фруктовых рулеток
+UseEggItemBot, # Бить яйца ;)
+Pickuper, # Сбор дропа
+SellBot, # Продажа чего либо
+ChangeLocationBot, # Переход по локациям
+настраиваем под себя, то что отключено не включаем

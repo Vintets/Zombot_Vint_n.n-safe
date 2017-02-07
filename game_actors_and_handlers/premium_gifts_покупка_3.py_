@@ -1,0 +1,46 @@
+# coding=utf-8
+import logging
+from game_state.base import BaseActor
+
+logger = logging.getLogger(__name__)
+
+class PremiumGifts(BaseActor):
+    
+    def perform_action(self):
+        location_id = "main"    # на каком острове
+        free_x = 95             # Координаты пустого места
+        free_y = 5
+        min_money = 50000000    # оставляем денег
+        num = 500               # партиями по ... шт.
+        specified_gift = 'VALENT_GIFT_BOX6' # зомбилетто 
+
+        if self.if_location_pirate(): return
+        if location_id == self._get_game_state().get_location_id():
+            build_cost = self._get_item_reader().get(specified_gift).buyCoins
+            build_sell = self._get_item_reader().get(specified_gift).sellCoins
+            name = self._get_item_reader().get(specified_gift).name
+            xp = self._get_item_reader().get(specified_gift).xp             
+            next_id = self.new_id()
+            buy_track = {"x":free_x,"action":"buy","y":free_y,"itemId":specified_gift,"type":"item","objId":next_id}
+            sell_track = {"action":"sell","type":"item","objId":next_id}
+            track_events = []
+            for n in range(num):
+                track_events.append(buy_track)
+                track_events.append(sell_track)   
+            expa = 0    
+            if self._get_game_state().get_state().gameMoney > min_money+num*(build_cost-build_sell):
+                expa += 1
+                logger.info(u"Покупаем %d шт. %a  %s "% (num,name))
+                self._get_events_sender().send_game_events(track_events)
+                self._get_game_state().get_state().gameMoney -= (build_cost-build_sell)*num
+            return
+            if expa:
+                logger.info(u"  ------------------------------------  ")
+                logger.info(u"Купили и продали %d %a! Опыта: %s "% (num*expa,name,xp*num*expa))
+                logger.info(u"  ------------------------------------  ")
+     
+        
+        
+        
+        
+ 

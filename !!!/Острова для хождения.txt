@@ -1,0 +1,62 @@
+Ходим:
+          Домашний остров            main
+             Остров Любви         isle_03
+                 Остров Х          isle_x
+              Остров Веры      isle_faith
+                 Страшный      isle_scary
+          Песочный остров       isle_sand
+     Остров Полярной ночи      isle_polar
+               Пик Админа  isle_scarecrow
+                    Омега      isle_omega
+           Ужасный остров   isle_elephant
+                 Дремучий       isle_wild
+             Остров Мечты      isle_dream
+               Остров НЛО        isle_ufo
+          Остров Чудовища    isle_monster
+                    Альфа      isle_alpha
+            Город-призрак    isle_emerald
+           Остров Надежды       isle_hope
+
+                         пещеры:
+             Склад хакера           un_09
+                 Подножье           un_01
+         Мраморная пещера           un_08
+      Мексиканский каньон           un_03
+          Копи царя Зомби           un_04
+             Нижнее днище           un_05
+                   Бездна           un_06
+              Хрустальный           un_07
+
+
+locations_only = [u"un_01",u"un_03",u"un_04",u"un_05",u"un_08",u"un_07",u"un_09",u"isle_alpha",u"isle_omega",u"isle_ufo",u"isle_faith",u"isle_scary",u"isle_sand",u"isle_polar",u"isle_scarecrow",u"isle_elephant",u"isle_wild",u"isle_monster",u"isle_x",u"isle_03",u"isle_dream",u"main"]
+
+
+
+НЕ ходим:
+Платные:
+                Секретный         isle_01
+  Остров Маленькой ёлочки      isle_small
+                 Звёздный       isle_star
+      Остров Большой ёлки      isle_large
+                   Лунный       isle_moon
+          Остров Гигантов      isle_giant
+     Остров Огромной ёлки        isle_xxl
+       Необитаемый остров     isle_desert
+
+[u"isle_01", u"isle_small", u"isle_star", u"isle_large", u"isle_moon", u"isle_giant", u"isle_xxl", u"isle_desert"]
+
+
+Пока нет:
+
+
+Не нужны:
+              Остров Майя         isle_02
+         Мобильный остров     isle_mobile
+                Пещеры Зу           un_02
+          Вишневый остров      isle_light
+            Остров гномов      isle_gnome
+	       лысая гора  isle_halloween
+
+
+
+

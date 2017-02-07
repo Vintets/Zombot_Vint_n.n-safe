@@ -1,0 +1,33 @@
+
+# системные файлы
+Thumbs.db
+.DS_Store
+*~
+
+
+# игнорируемые файлы проекта
+*.jpg
+*.pyc
+Run in browser*.exe
+Zombot GUI_*.exe
+#Zombot GUI_22 ver. 2.0.2.exe
+Профилирование*.bat
+items_name*.html
+items_name.txt
+
+
+# игнорируемые директории проекта
+/cookies/
+/Backup/
+/loaded_res/
+/update/update_*/
+/statistics/*
+/Akk_stat/
+/!!!/Профилирование Zombot/
+/ResourcesZomBot*/
+
+
+# нужные файлы в запрещённых директориях
+!/statistics/report_form.py
+
+
