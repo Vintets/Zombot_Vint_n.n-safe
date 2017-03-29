@@ -14,7 +14,6 @@ Python main.py 4 -c
 
 
 send_user = 26586292
-send_user = 3689309721107098259
 если поставить эту строку то все коллекции будут пересылаться на указанный ID вконтакте
 
 setting_view = {'pickup':True,'location_send':False}
